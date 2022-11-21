@@ -1,0 +1,8 @@
+prefix=/home/deveshdatwani/capstone/install
+
+Name: autonomous_tb
+Description: Description of autonomous_tb
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -40,9 +40,9 @@ def movebase_client():
 		client.send_goal(goal)
 		wait = client.wait_for_result()
 		if not wait:
-		    rospy.logerr("Action server down")
+			rospy.logerr("Action server down")
 		else:
-		    print("Reached " + location + " Goal") 
+			print("Reached " + location + " Goal") 
 	return 1
 
 if __name__ == '__main__':
@@ -50,6 +50,6 @@ if __name__ == '__main__':
 		rospy.init_node('movebaseClient')
 		result = movebase_client()
 		if result:
-		    rospy.loginfo("All Goals executed")
+			rospy.loginfo("All Goals executed")
 	except rospy.ROSInterruptException:
 		rospy.loginfo("Navigation DONE ")

@@ -306,6 +306,18 @@ EMPY_EXECUTABLE:FILEPATH=EMPY_EXECUTABLE-NOTFOUND
 //Empy script
 EMPY_SCRIPT:STRING=/usr/lib/python3/dist-packages/em.py
 
+//Path to a library.
+GMOCK_LIBRARY:FILEPATH=GMOCK_LIBRARY-NOTFOUND
+
+//Path to a library.
+GMOCK_LIBRARY_DEBUG:FILEPATH=GMOCK_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+GMOCK_MAIN_LIBRARY:FILEPATH=GMOCK_MAIN_LIBRARY-NOTFOUND
+
+//Path to a library.
+GMOCK_MAIN_LIBRARY_DEBUG:FILEPATH=GMOCK_MAIN_LIBRARY_DEBUG-NOTFOUND
+
 //The directory containing a CMake configuration file for GMock.
 GMock_DIR:PATH=GMock_DIR-NOTFOUND
 
@@ -323,6 +335,9 @@ GTEST_MAIN_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libgtest_main.a
 
 //Path to a library.
 GTEST_MAIN_LIBRARY_DEBUG:FILEPATH=GTEST_MAIN_LIBRARY_DEBUG-NOTFOUND
+
+//The directory containing a CMake configuration file for GTest.
+GTest_DIR:PATH=GTest_DIR-NOTFOUND
 
 //Enable installation of googletest. (Projects embedding googletest
 // may want to turn this OFF.)
@@ -388,8 +403,17 @@ autonomous_tb_SOURCE_DIR:STATIC=/home/deveshdatwani/capstone/src/autonomous_tb
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/noetic/share/catkin/cmake
 
+//Value Computed by CMake
+change_map_BINARY_DIR:STATIC=/home/deveshdatwani/capstone/build/change_map
+
+//Value Computed by CMake
+change_map_SOURCE_DIR:STATIC=/home/deveshdatwani/capstone/src/change_map
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/noetic/share/cpp_common/cmake
+
+//The directory containing a CMake configuration file for geometry_msgs.
+geometry_msgs_DIR:PATH=/opt/ros/noetic/share/geometry_msgs/cmake
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/deveshdatwani/capstone/build/gtest/googlemock
@@ -438,10 +462,16 @@ gtest_hide_internal_symbols:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/noetic/lib/librostime.so
+lib:FILEPATH=/opt/ros/noetic/lib/libxmlrpcpp.so
 
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/noetic/share/message_runtime/cmake
+
+//The directory containing a CMake configuration file for rosconsole.
+rosconsole_DIR:PATH=/opt/ros/noetic/share/rosconsole/cmake
+
+//The directory containing a CMake configuration file for roscpp.
+roscpp_DIR:PATH=/opt/ros/noetic/share/roscpp/cmake
 
 //The directory containing a CMake configuration file for roscpp_serialization.
 roscpp_serialization_DIR:PATH=/opt/ros/noetic/share/roscpp_serialization/cmake
@@ -449,14 +479,26 @@ roscpp_serialization_DIR:PATH=/opt/ros/noetic/share/roscpp_serialization/cmake
 //The directory containing a CMake configuration file for roscpp_traits.
 roscpp_traits_DIR:PATH=/opt/ros/noetic/share/roscpp_traits/cmake
 
+//The directory containing a CMake configuration file for rosgraph_msgs.
+rosgraph_msgs_DIR:PATH=/opt/ros/noetic/share/rosgraph_msgs/cmake
+
+//The directory containing a CMake configuration file for rosopy.
+rosopy_DIR:PATH=rosopy_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/noetic/share/rospy/cmake
 
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=/opt/ros/noetic/share/rostime/cmake
 
+//The directory containing a CMake configuration file for sensor_msgs.
+sensor_msgs_DIR:PATH=/opt/ros/noetic/share/sensor_msgs/cmake
+
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/noetic/share/std_msgs/cmake
+
+//The directory containing a CMake configuration file for xmlrpcpp.
+xmlrpcpp_DIR:PATH=/opt/ros/noetic/share/xmlrpcpp/cmake
 
 
 ########################
@@ -606,7 +648,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -660,6 +702,14 @@ GMOCK_FROM_SOURCE_INCLUDE_DIRS:INTERNAL=/usr/src/googletest/googlemock/include
 GMOCK_FROM_SOURCE_LIBRARIES:INTERNAL=gmock
 GMOCK_FROM_SOURCE_LIBRARY_DIRS:INTERNAL=/home/deveshdatwani/capstone/build/gmock
 GMOCK_FROM_SOURCE_MAIN_LIBRARIES:INTERNAL=gmock_main
+//ADVANCED property for variable: GMOCK_LIBRARY
+GMOCK_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GMOCK_LIBRARY_DEBUG
+GMOCK_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GMOCK_MAIN_LIBRARY
+GMOCK_MAIN_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GMOCK_MAIN_LIBRARY_DEBUG
+GMOCK_MAIN_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 GTEST_FROM_SOURCE_FOUND:INTERNAL=TRUE
 GTEST_FROM_SOURCE_INCLUDE_DIRS:INTERNAL=/usr/include
 GTEST_FROM_SOURCE_LIBRARIES:INTERNAL=gtest

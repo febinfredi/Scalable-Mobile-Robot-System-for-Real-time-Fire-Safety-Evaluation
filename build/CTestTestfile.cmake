@@ -7,3 +7,4 @@
 subdirs("gtest")
 subdirs("autonomous_tb")
 subdirs("change_map")
+subdirs("statemachine")

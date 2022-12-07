@@ -1,2 +1,2 @@
-autonomous_tb:map_score_detector:statemachine
+statemachine
 -DCATKIN_DEVEL_PREFIX=/home/deveshdatwani/capstone/devel -DCMAKE_INSTALL_PREFIX=/home/deveshdatwani/capstone/install -G Unix Makefiles

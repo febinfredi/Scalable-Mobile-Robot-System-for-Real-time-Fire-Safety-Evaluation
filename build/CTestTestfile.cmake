@@ -5,6 +5,4 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
-subdirs("autonomous_tb")
-subdirs("map_score_detector")
 subdirs("statemachine")

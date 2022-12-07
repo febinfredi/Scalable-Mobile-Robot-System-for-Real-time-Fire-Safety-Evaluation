@@ -2,4 +2,4 @@
 source_root_dir = '/home/deveshdatwani/capstone/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/home/deveshdatwani/capstone/devel;/home/deveshdatwani/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/home/deveshdatwani/capstone/devel;/home/deveshdatwani/catkin_ws/devel;/opt/ros/noetic' != '' else []
+underlay_workspaces = '/home/deveshdatwani/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/home/deveshdatwani/catkin_ws/devel;/opt/ros/noetic' != '' else []

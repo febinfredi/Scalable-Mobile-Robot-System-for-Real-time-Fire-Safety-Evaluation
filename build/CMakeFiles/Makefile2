@@ -55,7 +55,7 @@ CMAKE_BINARY_DIR = /home/deveshdatwani/capstone/build
 # The main recursive "all" target.
 all: gtest/all
 all: autonomous_tb/all
-all: change_map/all
+all: map_score_detector/all
 all: statemachine/all
 
 .PHONY : all
@@ -63,7 +63,7 @@ all: statemachine/all
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
 preinstall: autonomous_tb/preinstall
-preinstall: change_map/preinstall
+preinstall: map_score_detector/preinstall
 preinstall: statemachine/preinstall
 
 .PHONY : preinstall
@@ -76,7 +76,7 @@ clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
 clean: autonomous_tb/clean
-clean: change_map/clean
+clean: map_score_detector/clean
 clean: statemachine/clean
 
 .PHONY : clean
@@ -102,43 +102,6 @@ autonomous_tb/clean: autonomous_tb/CMakeFiles/std_msgs_generate_messages_eus.dir
 autonomous_tb/clean: autonomous_tb/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 .PHONY : autonomous_tb/clean
-
-#=============================================================================
-# Directory level rules for directory change_map
-
-# Recursive "all" directory target.
-change_map/all:
-
-.PHONY : change_map/all
-
-# Recursive "preinstall" directory target.
-change_map/preinstall:
-
-.PHONY : change_map/preinstall
-
-# Recursive "clean" directory target.
-change_map/clean: change_map/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
-change_map/clean: change_map/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-change_map/clean: change_map/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-change_map/clean: change_map/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
-change_map/clean: change_map/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
-change_map/clean: change_map/CMakeFiles/roscpp_generate_messages_py.dir/clean
-change_map/clean: change_map/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
-change_map/clean: change_map/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-change_map/clean: change_map/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-change_map/clean: change_map/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-change_map/clean: change_map/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-change_map/clean: change_map/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
-change_map/clean: change_map/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
-change_map/clean: change_map/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-change_map/clean: change_map/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-change_map/clean: change_map/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-change_map/clean: change_map/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
-change_map/clean: change_map/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
-change_map/clean: change_map/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-change_map/clean: change_map/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
-
-.PHONY : change_map/clean
 
 #=============================================================================
 # Directory level rules for directory gtest
@@ -196,6 +159,43 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest_main.dir/clean
 gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest.dir/clean
 
 .PHONY : gtest/googletest/clean
+
+#=============================================================================
+# Directory level rules for directory map_score_detector
+
+# Recursive "all" directory target.
+map_score_detector/all:
+
+.PHONY : map_score_detector/all
+
+# Recursive "preinstall" directory target.
+map_score_detector/preinstall:
+
+.PHONY : map_score_detector/preinstall
+
+# Recursive "clean" directory target.
+map_score_detector/clean: map_score_detector/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+map_score_detector/clean: map_score_detector/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+map_score_detector/clean: map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+map_score_detector/clean: map_score_detector/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+map_score_detector/clean: map_score_detector/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+map_score_detector/clean: map_score_detector/CMakeFiles/roscpp_generate_messages_py.dir/clean
+map_score_detector/clean: map_score_detector/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+map_score_detector/clean: map_score_detector/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+map_score_detector/clean: map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+map_score_detector/clean: map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+map_score_detector/clean: map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+map_score_detector/clean: map_score_detector/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+map_score_detector/clean: map_score_detector/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+map_score_detector/clean: map_score_detector/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+map_score_detector/clean: map_score_detector/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+map_score_detector/clean: map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+map_score_detector/clean: map_score_detector/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+map_score_detector/clean: map_score_detector/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+map_score_detector/clean: map_score_detector/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+map_score_detector/clean: map_score_detector/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+
+.PHONY : map_score_detector/clean
 
 #=============================================================================
 # Directory level rules for directory statemachine
@@ -595,544 +595,544 @@ autonomous_tb/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
 .PHONY : autonomous_tb/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target change_map/CMakeFiles/geometry_msgs_generate_messages_eus.dir
+# Target rules for target map_score_detector/CMakeFiles/geometry_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-change_map/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f change_map/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make change_map/CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f change_map/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make change_map/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+map_score_detector/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f map_score_detector/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make map_score_detector/CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f map_score_detector/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make map_score_detector/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/deveshdatwani/capstone/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
-.PHONY : change_map/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+.PHONY : map_score_detector/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-change_map/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+map_score_detector/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 change_map/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 map_score_detector/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-.PHONY : change_map/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+.PHONY : map_score_detector/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_eus: change_map/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+geometry_msgs_generate_messages_eus: map_score_detector/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 .PHONY : geometry_msgs_generate_messages_eus
 
 # clean rule for target.
-change_map/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f change_map/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make change_map/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
-.PHONY : change_map/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+map_score_detector/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f map_score_detector/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make map_score_detector/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+.PHONY : map_score_detector/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target change_map/CMakeFiles/roscpp_generate_messages_eus.dir
+# Target rules for target map_score_detector/CMakeFiles/roscpp_generate_messages_eus.dir
 
 # All Build rule for target.
-change_map/CMakeFiles/roscpp_generate_messages_eus.dir/all:
-	$(MAKE) -f change_map/CMakeFiles/roscpp_generate_messages_eus.dir/build.make change_map/CMakeFiles/roscpp_generate_messages_eus.dir/depend
-	$(MAKE) -f change_map/CMakeFiles/roscpp_generate_messages_eus.dir/build.make change_map/CMakeFiles/roscpp_generate_messages_eus.dir/build
+map_score_detector/CMakeFiles/roscpp_generate_messages_eus.dir/all:
+	$(MAKE) -f map_score_detector/CMakeFiles/roscpp_generate_messages_eus.dir/build.make map_score_detector/CMakeFiles/roscpp_generate_messages_eus.dir/depend
+	$(MAKE) -f map_score_detector/CMakeFiles/roscpp_generate_messages_eus.dir/build.make map_score_detector/CMakeFiles/roscpp_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/deveshdatwani/capstone/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
-.PHONY : change_map/CMakeFiles/roscpp_generate_messages_eus.dir/all
+.PHONY : map_score_detector/CMakeFiles/roscpp_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-change_map/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
+map_score_detector/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 change_map/CMakeFiles/roscpp_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 map_score_detector/CMakeFiles/roscpp_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-.PHONY : change_map/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+.PHONY : map_score_detector/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_eus: change_map/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+roscpp_generate_messages_eus: map_score_detector/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 .PHONY : roscpp_generate_messages_eus
 
 # clean rule for target.
-change_map/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
-	$(MAKE) -f change_map/CMakeFiles/roscpp_generate_messages_eus.dir/build.make change_map/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-.PHONY : change_map/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+map_score_detector/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
+	$(MAKE) -f map_score_detector/CMakeFiles/roscpp_generate_messages_eus.dir/build.make map_score_detector/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+.PHONY : map_score_detector/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target change_map/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
+# Target rules for target map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-change_map/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f change_map/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make change_map/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f change_map/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make change_map/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/deveshdatwani/capstone/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
-.PHONY : change_map/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+.PHONY : map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-change_map/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 change_map/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-.PHONY : change_map/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+.PHONY : map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: change_map/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+rosgraph_msgs_generate_messages_nodejs: map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_nodejs
 
 # clean rule for target.
-change_map/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f change_map/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make change_map/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-.PHONY : change_map/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+.PHONY : map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target change_map/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
+# Target rules for target map_score_detector/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-change_map/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f change_map/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make change_map/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f change_map/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make change_map/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+map_score_detector/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f map_score_detector/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make map_score_detector/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f map_score_detector/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make map_score_detector/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/deveshdatwani/capstone/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_cpp"
-.PHONY : change_map/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+.PHONY : map_score_detector/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-change_map/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+map_score_detector/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 change_map/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 map_score_detector/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-.PHONY : change_map/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : map_score_detector/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_cpp: change_map/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+sensor_msgs_generate_messages_cpp: map_score_detector/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : sensor_msgs_generate_messages_cpp
 
 # clean rule for target.
-change_map/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f change_map/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make change_map/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
-.PHONY : change_map/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+map_score_detector/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f map_score_detector/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make map_score_detector/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+.PHONY : map_score_detector/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target change_map/CMakeFiles/sensor_msgs_generate_messages_eus.dir
+# Target rules for target map_score_detector/CMakeFiles/sensor_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-change_map/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f change_map/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make change_map/CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f change_map/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make change_map/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+map_score_detector/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f map_score_detector/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make map_score_detector/CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f map_score_detector/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make map_score_detector/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/deveshdatwani/capstone/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_eus"
-.PHONY : change_map/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+.PHONY : map_score_detector/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-change_map/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+map_score_detector/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 change_map/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 map_score_detector/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-.PHONY : change_map/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+.PHONY : map_score_detector/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_eus: change_map/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+sensor_msgs_generate_messages_eus: map_score_detector/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 
 .PHONY : sensor_msgs_generate_messages_eus
 
 # clean rule for target.
-change_map/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f change_map/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make change_map/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
-.PHONY : change_map/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+map_score_detector/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f map_score_detector/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make map_score_detector/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+.PHONY : map_score_detector/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target change_map/CMakeFiles/roscpp_generate_messages_py.dir
+# Target rules for target map_score_detector/CMakeFiles/roscpp_generate_messages_py.dir
 
 # All Build rule for target.
-change_map/CMakeFiles/roscpp_generate_messages_py.dir/all:
-	$(MAKE) -f change_map/CMakeFiles/roscpp_generate_messages_py.dir/build.make change_map/CMakeFiles/roscpp_generate_messages_py.dir/depend
-	$(MAKE) -f change_map/CMakeFiles/roscpp_generate_messages_py.dir/build.make change_map/CMakeFiles/roscpp_generate_messages_py.dir/build
+map_score_detector/CMakeFiles/roscpp_generate_messages_py.dir/all:
+	$(MAKE) -f map_score_detector/CMakeFiles/roscpp_generate_messages_py.dir/build.make map_score_detector/CMakeFiles/roscpp_generate_messages_py.dir/depend
+	$(MAKE) -f map_score_detector/CMakeFiles/roscpp_generate_messages_py.dir/build.make map_score_detector/CMakeFiles/roscpp_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/deveshdatwani/capstone/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
-.PHONY : change_map/CMakeFiles/roscpp_generate_messages_py.dir/all
+.PHONY : map_score_detector/CMakeFiles/roscpp_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-change_map/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
+map_score_detector/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 change_map/CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 map_score_detector/CMakeFiles/roscpp_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-.PHONY : change_map/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : map_score_detector/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_py: change_map/CMakeFiles/roscpp_generate_messages_py.dir/rule
+roscpp_generate_messages_py: map_score_detector/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 .PHONY : roscpp_generate_messages_py
 
 # clean rule for target.
-change_map/CMakeFiles/roscpp_generate_messages_py.dir/clean:
-	$(MAKE) -f change_map/CMakeFiles/roscpp_generate_messages_py.dir/build.make change_map/CMakeFiles/roscpp_generate_messages_py.dir/clean
-.PHONY : change_map/CMakeFiles/roscpp_generate_messages_py.dir/clean
+map_score_detector/CMakeFiles/roscpp_generate_messages_py.dir/clean:
+	$(MAKE) -f map_score_detector/CMakeFiles/roscpp_generate_messages_py.dir/build.make map_score_detector/CMakeFiles/roscpp_generate_messages_py.dir/clean
+.PHONY : map_score_detector/CMakeFiles/roscpp_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target change_map/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
+# Target rules for target map_score_detector/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-change_map/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f change_map/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make change_map/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f change_map/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make change_map/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+map_score_detector/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f map_score_detector/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make map_score_detector/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f map_score_detector/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make map_score_detector/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/deveshdatwani/capstone/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
-.PHONY : change_map/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+.PHONY : map_score_detector/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-change_map/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+map_score_detector/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 change_map/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 map_score_detector/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-.PHONY : change_map/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : map_score_detector/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_lisp: change_map/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+geometry_msgs_generate_messages_lisp: map_score_detector/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 .PHONY : geometry_msgs_generate_messages_lisp
 
 # clean rule for target.
-change_map/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f change_map/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make change_map/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
-.PHONY : change_map/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+map_score_detector/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f map_score_detector/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make map_score_detector/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+.PHONY : map_score_detector/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target change_map/CMakeFiles/roscpp_generate_messages_nodejs.dir
+# Target rules for target map_score_detector/CMakeFiles/roscpp_generate_messages_nodejs.dir
 
 # All Build rule for target.
-change_map/CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
-	$(MAKE) -f change_map/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make change_map/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
-	$(MAKE) -f change_map/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make change_map/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+map_score_detector/CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
+	$(MAKE) -f map_score_detector/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make map_score_detector/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
+	$(MAKE) -f map_score_detector/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make map_score_detector/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/deveshdatwani/capstone/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_nodejs"
-.PHONY : change_map/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+.PHONY : map_score_detector/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-change_map/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
+map_score_detector/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 change_map/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 map_score_detector/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-.PHONY : change_map/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+.PHONY : map_score_detector/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_nodejs: change_map/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+roscpp_generate_messages_nodejs: map_score_detector/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 .PHONY : roscpp_generate_messages_nodejs
 
 # clean rule for target.
-change_map/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f change_map/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make change_map/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-.PHONY : change_map/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+map_score_detector/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f map_score_detector/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make map_score_detector/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+.PHONY : map_score_detector/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target change_map/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
+# Target rules for target map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-change_map/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f change_map/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make change_map/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f change_map/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make change_map/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/deveshdatwani/capstone/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
-.PHONY : change_map/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+.PHONY : map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-change_map/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 change_map/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-.PHONY : change_map/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: change_map/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+rosgraph_msgs_generate_messages_cpp: map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_cpp
 
 # clean rule for target.
-change_map/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f change_map/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make change_map/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-.PHONY : change_map/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+.PHONY : map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target change_map/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
+# Target rules for target map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-change_map/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f change_map/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make change_map/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f change_map/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make change_map/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/deveshdatwani/capstone/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
-.PHONY : change_map/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+.PHONY : map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-change_map/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 change_map/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-.PHONY : change_map/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_eus: change_map/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+rosgraph_msgs_generate_messages_eus: map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_eus
 
 # clean rule for target.
-change_map/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f change_map/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make change_map/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-.PHONY : change_map/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+.PHONY : map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target change_map/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
+# Target rules for target map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-change_map/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f change_map/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make change_map/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f change_map/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make change_map/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/deveshdatwani/capstone/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_lisp"
-.PHONY : change_map/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+.PHONY : map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-change_map/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 change_map/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-.PHONY : change_map/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: change_map/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+rosgraph_msgs_generate_messages_lisp: map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_lisp
 
 # clean rule for target.
-change_map/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f change_map/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make change_map/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-.PHONY : change_map/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+.PHONY : map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target change_map/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
+# Target rules for target map_score_detector/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-change_map/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f change_map/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make change_map/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f change_map/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make change_map/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+map_score_detector/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f map_score_detector/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make map_score_detector/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f map_score_detector/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make map_score_detector/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/deveshdatwani/capstone/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
-.PHONY : change_map/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+.PHONY : map_score_detector/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-change_map/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+map_score_detector/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 change_map/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 map_score_detector/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-.PHONY : change_map/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+.PHONY : map_score_detector/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_nodejs: change_map/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+geometry_msgs_generate_messages_nodejs: map_score_detector/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : geometry_msgs_generate_messages_nodejs
 
 # clean rule for target.
-change_map/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f change_map/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make change_map/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
-.PHONY : change_map/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+map_score_detector/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f map_score_detector/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make map_score_detector/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+.PHONY : map_score_detector/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target change_map/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
+# Target rules for target map_score_detector/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-change_map/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f change_map/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make change_map/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f change_map/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make change_map/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+map_score_detector/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f map_score_detector/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make map_score_detector/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f map_score_detector/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make map_score_detector/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/deveshdatwani/capstone/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
-.PHONY : change_map/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+.PHONY : map_score_detector/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-change_map/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+map_score_detector/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 change_map/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 map_score_detector/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-.PHONY : change_map/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : map_score_detector/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_cpp: change_map/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+geometry_msgs_generate_messages_cpp: map_score_detector/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : geometry_msgs_generate_messages_cpp
 
 # clean rule for target.
-change_map/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f change_map/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make change_map/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
-.PHONY : change_map/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+map_score_detector/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f map_score_detector/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make map_score_detector/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+.PHONY : map_score_detector/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target change_map/CMakeFiles/sensor_msgs_generate_messages_py.dir
+# Target rules for target map_score_detector/CMakeFiles/sensor_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-change_map/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f change_map/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make change_map/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f change_map/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make change_map/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+map_score_detector/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f map_score_detector/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make map_score_detector/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f map_score_detector/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make map_score_detector/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/deveshdatwani/capstone/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_py"
-.PHONY : change_map/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+.PHONY : map_score_detector/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-change_map/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+map_score_detector/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 change_map/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 map_score_detector/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-.PHONY : change_map/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : map_score_detector/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_py: change_map/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+sensor_msgs_generate_messages_py: map_score_detector/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 .PHONY : sensor_msgs_generate_messages_py
 
 # clean rule for target.
-change_map/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f change_map/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make change_map/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-.PHONY : change_map/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+map_score_detector/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f map_score_detector/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make map_score_detector/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+.PHONY : map_score_detector/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target change_map/CMakeFiles/roscpp_generate_messages_lisp.dir
+# Target rules for target map_score_detector/CMakeFiles/roscpp_generate_messages_lisp.dir
 
 # All Build rule for target.
-change_map/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
-	$(MAKE) -f change_map/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make change_map/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
-	$(MAKE) -f change_map/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make change_map/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+map_score_detector/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
+	$(MAKE) -f map_score_detector/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make map_score_detector/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
+	$(MAKE) -f map_score_detector/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make map_score_detector/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/deveshdatwani/capstone/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
-.PHONY : change_map/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+.PHONY : map_score_detector/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-change_map/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
+map_score_detector/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 change_map/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 map_score_detector/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-.PHONY : change_map/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : map_score_detector/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_lisp: change_map/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+roscpp_generate_messages_lisp: map_score_detector/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 .PHONY : roscpp_generate_messages_lisp
 
 # clean rule for target.
-change_map/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
-	$(MAKE) -f change_map/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make change_map/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-.PHONY : change_map/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+map_score_detector/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
+	$(MAKE) -f map_score_detector/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make map_score_detector/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+.PHONY : map_score_detector/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target change_map/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
+# Target rules for target map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-change_map/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f change_map/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make change_map/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f change_map/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make change_map/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/deveshdatwani/capstone/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_py"
-.PHONY : change_map/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+.PHONY : map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-change_map/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 change_map/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-.PHONY : change_map/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_py: change_map/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+rosgraph_msgs_generate_messages_py: map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_py
 
 # clean rule for target.
-change_map/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f change_map/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make change_map/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-.PHONY : change_map/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+.PHONY : map_score_detector/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target change_map/CMakeFiles/geometry_msgs_generate_messages_py.dir
+# Target rules for target map_score_detector/CMakeFiles/geometry_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-change_map/CMakeFiles/geometry_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f change_map/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make change_map/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f change_map/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make change_map/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+map_score_detector/CMakeFiles/geometry_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f map_score_detector/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make map_score_detector/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f map_score_detector/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make map_score_detector/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/deveshdatwani/capstone/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_py"
-.PHONY : change_map/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+.PHONY : map_score_detector/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-change_map/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+map_score_detector/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 change_map/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 map_score_detector/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-.PHONY : change_map/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : map_score_detector/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_py: change_map/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+geometry_msgs_generate_messages_py: map_score_detector/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 .PHONY : geometry_msgs_generate_messages_py
 
 # clean rule for target.
-change_map/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f change_map/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make change_map/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
-.PHONY : change_map/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+map_score_detector/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f map_score_detector/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make map_score_detector/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+.PHONY : map_score_detector/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target change_map/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir
+# Target rules for target map_score_detector/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-change_map/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f change_map/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make change_map/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f change_map/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make change_map/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+map_score_detector/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f map_score_detector/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make map_score_detector/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f map_score_detector/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make map_score_detector/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/deveshdatwani/capstone/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_nodejs"
-.PHONY : change_map/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+.PHONY : map_score_detector/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-change_map/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+map_score_detector/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 change_map/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 map_score_detector/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-.PHONY : change_map/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+.PHONY : map_score_detector/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_nodejs: change_map/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+sensor_msgs_generate_messages_nodejs: map_score_detector/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : sensor_msgs_generate_messages_nodejs
 
 # clean rule for target.
-change_map/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f change_map/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make change_map/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
-.PHONY : change_map/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+map_score_detector/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f map_score_detector/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make map_score_detector/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+.PHONY : map_score_detector/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target change_map/CMakeFiles/roscpp_generate_messages_cpp.dir
+# Target rules for target map_score_detector/CMakeFiles/roscpp_generate_messages_cpp.dir
 
 # All Build rule for target.
-change_map/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
-	$(MAKE) -f change_map/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make change_map/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
-	$(MAKE) -f change_map/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make change_map/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+map_score_detector/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
+	$(MAKE) -f map_score_detector/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make map_score_detector/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
+	$(MAKE) -f map_score_detector/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make map_score_detector/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/deveshdatwani/capstone/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
-.PHONY : change_map/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+.PHONY : map_score_detector/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-change_map/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
+map_score_detector/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 change_map/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 map_score_detector/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-.PHONY : change_map/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : map_score_detector/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_cpp: change_map/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+roscpp_generate_messages_cpp: map_score_detector/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 .PHONY : roscpp_generate_messages_cpp
 
 # clean rule for target.
-change_map/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
-	$(MAKE) -f change_map/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make change_map/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-.PHONY : change_map/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+map_score_detector/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
+	$(MAKE) -f map_score_detector/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make map_score_detector/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+.PHONY : map_score_detector/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target change_map/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
+# Target rules for target map_score_detector/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-change_map/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f change_map/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make change_map/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f change_map/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make change_map/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+map_score_detector/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f map_score_detector/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make map_score_detector/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f map_score_detector/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make map_score_detector/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/deveshdatwani/capstone/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_lisp"
-.PHONY : change_map/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+.PHONY : map_score_detector/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-change_map/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+map_score_detector/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 change_map/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 map_score_detector/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/deveshdatwani/capstone/build/CMakeFiles 0
-.PHONY : change_map/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : map_score_detector/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_lisp: change_map/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+sensor_msgs_generate_messages_lisp: map_score_detector/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 .PHONY : sensor_msgs_generate_messages_lisp
 
 # clean rule for target.
-change_map/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f change_map/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make change_map/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
-.PHONY : change_map/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+map_score_detector/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f map_score_detector/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make map_score_detector/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+.PHONY : map_score_detector/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

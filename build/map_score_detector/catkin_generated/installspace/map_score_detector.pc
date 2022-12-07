@@ -1,0 +1,8 @@
+prefix=/home/deveshdatwani/capstone/install
+
+Name: map_score_detector
+Description: Description of map_score_detector
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib -lmap_score_detector
+Requires: roscpp rospy sensor_msgs std_msgs message_runtime

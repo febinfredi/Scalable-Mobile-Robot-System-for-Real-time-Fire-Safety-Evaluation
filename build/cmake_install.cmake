@@ -131,7 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/deveshdatwani/capstone/build/gtest/cmake_install.cmake")
-  include("/home/deveshdatwani/capstone/build/autonomous_tb/cmake_install.cmake")
+  include("/home/deveshdatwani/capstone/build/statemachine/cmake_install.cmake")
 
 endif()
 

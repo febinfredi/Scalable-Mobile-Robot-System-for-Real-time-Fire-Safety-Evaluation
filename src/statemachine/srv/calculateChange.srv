@@ -1,0 +1,4 @@
+int32[] image1
+int32[] image2
+---
+int32[] change_map

@@ -22,7 +22,7 @@ class Explore:
 		# Simple move_base action client
 		self.move_base = actionlib.SimpleActionClient('move_base', MoveBaseAction)
 		self.move_base.wait_for_server(rospy.Duration(5.0))
-		rospy.logdebug("move_base is ready") in the 2 strings with a / or \ depending on the os
+		rospy.logdebug("move_base is ready")
 		
 		# Path dir and file name for saving current map
 		self.SAVE_PATH = "/home/febin/RBE-Capstone-main/src/statemachine/current_map.png"

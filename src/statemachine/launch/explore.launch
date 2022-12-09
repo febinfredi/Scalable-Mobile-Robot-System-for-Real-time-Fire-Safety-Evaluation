@@ -11,7 +11,7 @@
 	<!-- Turtlebot3 waffle pi -->  
 	<param name="robot_description" command="$(find xacro)/xacro  $(find turtlebot3_description)/urdf/turtlebot3_waffle_pi.urdf.xacro" />
 
-	<node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
+	<node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">	
 	  <param name="publish_frequency" type="double" value="50.0" />
 	</node>
 
@@ -19,15 +19,14 @@
 	<node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf" args="-urdf -model turtlebot3_waffle_pi -param robot_description" />
 
 	<!-- Map server -->
-	<node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>
-
-	<!-- AMCL --> 
-	<include file="$(find turtlebot3_navigation)/launch/amcl.launch">
-		<arg name="initial_pose_x" value="-3.0" if="$(eval map_name == 'house')"/>
-		<arg name="initial_pose_y" value="1.0" if="$(eval map_name == 'house')"/>
-		<arg name="initial_pose_a" value="0" if="$(eval map_name == 'house')"/>
-	</include>
+	<!--node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/-->
 	
+	<node pkg="gmapping" type="slam_gmapping" name="turtlebot3_slam_gmapping" output="screen">
+		<param name="base_frame" value="base_footprint"/>
+		<param name="odom_frame" value="odom"/>
+		<param name="map_frame"  value="map"/>
+		<rosparam command="load" file="$(find turtlebot3_slam)/config/gmapping_params.yaml" />
+	</node>
 
 	<!-- Move base node -->	
 	<node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
@@ -43,12 +42,10 @@
 	  <param name="DWAPlannerROS/min_vel_x" value="0.0" />
 	</node>
 
-	<!-- Rviz-->
-	<node pkg="rviz" type="rviz" name="rviz" required="true"  args="-d $(find turtlebot3_navigation)/rviz/turtlebot3_navigation.rviz"/>
+	<!-- Rviz Gmapping-->
+	<node pkg="rviz" type="rviz" name="rviz" required="true" args="-d $(find turtlebot3_slam)/rviz/turtlebot3_gmapping.rviz"/>
 	
-	<!-- Goal sequence execution -->
-	<node pkg="autonomous_tb" name="goal_sequence" type="goal_sequence.py" output="screen">
-		<param name="map_type" value="$(arg map_name)" />
-	</node>
-
+	<!-- Teleop control-->
+	<!--node pkg="turtlebot3_teleop" type="turtlebot3_teleop_key" name="turtlebot3_teleop_keyboard"  output="screen"/-->
+	
 </launch>

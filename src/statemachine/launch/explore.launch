@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <launch>
 	<arg name="map_type" default="no_obs"/>
-	<arg name="map_file" default="$(find autonomous_tb)/maps/map.yaml" if="$(eval map_name == 'house')"/>
+	<!--arg name="map_file" default="$(find autonomous_tb)/maps/map.yaml" if="$(eval map_name == 'house')"/-->
 
 	<!-- World -->
 	<include file="$(find gazebo_ros)/launch/empty_world.launch">

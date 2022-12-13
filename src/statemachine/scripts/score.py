@@ -47,10 +47,10 @@ class Score():
 			self.change_dict[self.name_map[key]] = perc_change	
 		# Print path length scores 
 		print("Map scores (No obstacles):")		
-		#print(self.map_scores_no_obs)
+		print(self.map_scores_no_obs)
 		print(" ")
 		print("Map scores (With obstacles):")
-		#print(self.map_scores_obs)
+		print(self.map_scores_obs)
 		print(" ")
 		print("Percent change in each room:")
 		for key in self.change_dict.keys():

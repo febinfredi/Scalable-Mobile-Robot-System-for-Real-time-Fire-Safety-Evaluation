@@ -27,6 +27,7 @@ class ChangeDetector():
                     block   = diff_image[j:j+5, k:k+5]
                     #print(i,j,k,block.shape)
                     feature = block.ravel()
+                    print(feature.shape)
                     vector_set[i, :] = feature
                     k = k + 5
                 j = j + 5
@@ -76,8 +77,8 @@ class ChangeDetector():
         
         # print('Operating')
         
-        image1 = imread(imagepath1)
-        image2 = imread(imagepath2)
+        image1 = imread(imagepath1, mode="L")
+        image2 = imread(imagepath2, mode="L")
         # print(image1.shape,image2.shape) 
         new_size = np.asarray(image1.shape) / 5
         new_size = new_size.astype(int) * 5
@@ -94,11 +95,11 @@ class ChangeDetector():
         pca.fit(vector_set)
         EVS = pca.components_
             
-        FVS     = self.find_FVS(EVS, diff_image, mean_vec, new_size)
-        
+        FVS = self.find_FVS(EVS, diff_image, mean_vec, new_size)
+          
         # print('\ncomputing k means')
         
-        components = 3
+        components = 5
         least_index, change_map = self.clustering(FVS, components, new_size)
         
         change_map[change_map == least_index] = 255
@@ -112,5 +113,9 @@ class ChangeDetector():
                                  (0,0,1,0,0)), dtype=np.uint8)
         
         cleanChangeMap = cv2.erode(change_map, kernel)
+        kernel = np.ones((5,5), np.uint8)
+        change_map = cv2.dilate(change_map, kernel, iterations=2)
+
+        cv2.imwrite("current_change_map.jpg", change_map)
 
         return change_map

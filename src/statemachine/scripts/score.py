@@ -4,28 +4,32 @@ from PIL import Image
 import numpy as np
 from RRT import RRT
 import time
-
+from matplotlib import cm
 import matplotlib.pyplot as plt
 
 class Score():
 	
 	def __init__(self):
 		# Path to access the map
-		self.FILE_PATH = "/home/febin/c_ws/src/autonomous_tb/robot_maps/current_map_with_boxes.png"
-		self.FILE_PATH2 = "/home/febin/c_ws/src/autonomous_tb/robot_maps/current_map_with_boxes.png"
+		# Without obstacles
+		self.FILE_PATH = "/home/febin/c_ws/src/autonomous_tb/robot_maps/ground_truth_costmap.pgm"
+		# With obstacles
+		self.FILE_PATH2 = "/home/febin/c_ws/src/autonomous_tb/robot_maps/obs_costmap.pgm"
 		
 		# Goal coordinates 
 		self.goal  = (203, 275)
-		 
+		
+		# Draw map flag
+		self.draw_map = True 
 		# Start coordinates
 		self.start_coordinates = [(114, 394), (135, 151), (184, 130), (111, 300), (207, 372)]
 		self.name_map = {114:'Room 1', 135:'Room 2', 184:'Room 3', 111:'Room 4', 207:'Room 5'}
+		# Map scores without obstacles
 		self.map_scores_no_obs, self.gradient_map = self.score(self.start_coordinates, self.goal, self.FILE_PATH)
-		self.map_scores_obs = self.score(self.start_coordinates, self.goal, self.FILE_PATH2)
+		# Map scores with obstacles
+		self.map_scores_obs, self.foo = self.score(self.start_coordinates, self.goal, self.FILE_PATH2)
 		
 		self.change_dict = dict()
-		
-		plt.contour(self.gradient_map)
 		
 		for key in self.map_scores_obs.keys():
 			perc_change = ((self.map_scores_obs[key][0] - self.map_scores_no_obs[key][0]) / self.map_scores_no_obs[key][0])*100 
@@ -40,6 +44,15 @@ class Score():
 		print("Percent change in each room:")
 		for key in self.change_dict.keys():
 			print("{}: {:0.2f}%".format(key, self.change_dict[key]))
+			
+		self.X = np.arange(0, 384)
+		self.Y = np.arange(0, 384)
+		self.X, self.Y = np.meshgrid(X, Y)
+		self.fig, self.ax = plt.subplots(subplot_kw={"projection": "3d"})
+		self.surf = self.ax.plot_surface(self.X, self.Y, self.gradient_map, cmap=cm.coolwarm, linewidth=0, antialiased=False)
+		#plt.contour(self.gradient_map)
+		self.fig.colorbar(surf, shrink=0.5, aspect=5)
+		plt.show()	
 
 	def load_map(self, file_path, resolution_scale):
 		''' Load map from an image and return a 2D binary numpy array
@@ -100,11 +113,12 @@ class Score():
 		score_dict = dict()
 		for start_coord in locations:
 			# Planning class
-			RRT_planner = RRT(map_array, start_coord, goal)
+			RRT_planner = RRT(map_array, start_coord, goal, self.draw_map)
 			path_length, path_nodes = RRT_planner.informed_RRT_star(n_pts=2000)
 			score_dict[start_coord[0]] = (path_length, path_nodes)
 		end_time = time.time()
 		print("Total time for calculating scores is %.2f" %(end_time-start_time))
+		
 		return score_dict, gradient_map	
 			
 

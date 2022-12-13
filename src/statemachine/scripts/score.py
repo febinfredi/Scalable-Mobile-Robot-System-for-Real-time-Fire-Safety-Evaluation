@@ -6,6 +6,7 @@ from RRT import RRT
 import time
 from matplotlib import cm
 import matplotlib.pyplot as plt
+from contextlib import suppress
 import scipy
 
 class Score():
@@ -93,8 +94,8 @@ class Score():
 			for j in range(output_size[1]):
 				for k in range(max(0, i-filter.shape[0]), i+1):
 					for l in range(max(0, j-filter.shape[1]), j+1):
-						#with suppress(IndexError):
-						sum += signal[k, l] * filter[i-k, j-l]
+						with suppress(IndexError):
+							sum += signal[k, l] * filter[i-k, j-l]
 				out[i, j] = sum
 				sum = 0
 

@@ -16,7 +16,7 @@ class Node:
 # Class for RRT
 class RRT:
     # Constructor
-    def __init__(self, map_array, start, goal):
+    def __init__(self, map_array, start, goal, draw_map):
         self.map_array = map_array            # map array, 1->free, 0->obstacle
         self.size_row = map_array.shape[0]    # map size
         self.size_col = map_array.shape[1]    # map size
@@ -25,6 +25,7 @@ class RRT:
         self.goal = Node(goal[0], goal[1])    # goal node
         self.vertices = []                    # list of nodes
         self.found = False                    # found flag
+        self.drawMap = draw_map                 # Draw map flag
         
 
     def init_map(self):
@@ -436,7 +437,8 @@ class RRT:
                 self.rewire(new_node, neighbors)
         
         # Draw result
-        #self.draw_map()
+        if self.drawMap==True:
+            self.draw_map()
         
         # Output
         if self.found:

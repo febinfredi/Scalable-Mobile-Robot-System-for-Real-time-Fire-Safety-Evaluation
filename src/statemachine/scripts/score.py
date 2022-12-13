@@ -44,7 +44,8 @@ class Score():
 		print("Percent change in each room:")
 		for key in self.change_dict.keys():
 			print("{}: {:0.2f}%".format(key, self.change_dict[key]))
-			
+		
+		# For 3d surface plot
 		self.X = np.arange(0, 384)
 		self.Y = np.arange(0, 384)
 		self.X, self.Y = np.meshgrid(X, Y)

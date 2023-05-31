@@ -30,7 +30,7 @@ rosrun <package_name> score.py
 ### Results
 
 Mapping the environment for new obstacles using SLAM Gmapping:
-https://github.com/febinfredi/Indoor-obstacle-detection-and-fire-risk-evaluation/assets/58045099/0c859f8e-dd8f-4898-9577-3ade6afffd25
+![slam_capstone](https://github.com/febinfredi/Scalable-Mobile-Robot-System-for-Real-time-Fire-Safety-Evaluation/assets/58045099/0fabf5b5-1568-41f8-b51c-f41dad268ced)
 
 Metric scores (Higher the percentage, more risk due to the now obstacel):
 ![Alt text](Images/risk_scores.png)          
